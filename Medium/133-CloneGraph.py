@@ -38,7 +38,7 @@ from typing import Optional
 class Solution:
     def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:
         """
-        Clone an undirected graph using iterative DFS.
+        Clone an undirected graph using iterative DFS (Depth First Search).
         
         Args:
             node: Reference to a node in the connected undirected graph
@@ -58,19 +58,19 @@ class Solution:
         # First pass: Visit all nodes and create clones
         while stack:
             node = stack.pop()
-            bck_to_copy[node] = Node(val=node.val)
+            bck_to_copy[node] = Node(val=node.val)  # Create new Node based on value of backup node. 
                 
             # Add unvisited neighbors to stack
             for nei in node.neighbors:
                 if nei not in visited:
                     visited.add(nei)
-                    stack.append(nei)
+                    stack.append(nei)  # If the value of a neighbor is not present in stack, append the value to the stack
 
         # Second pass: Connect cloned nodes with their neighbors
         for old_node, new_node in bck_to_copy.items():
             for nei in old_node.neighbors:
                 new_nei = bck_to_copy[nei]
-                new_node.neighbors.append(new_nei)
+                new_node.neighbors.append(new_nei)  # Map the same node neighbor values from backup nodes to new Nodes.
 
         return bck_to_copy[start]
 
