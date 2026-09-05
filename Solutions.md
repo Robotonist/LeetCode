@@ -5,9 +5,9 @@
 | Difficulty | Count |
 |-----------|-------|
 | Easy | 0 |
-| Medium | 2 |
+| Medium | 3 |
 | Hard | 0 |
-| **Total** | **2** |
+| **Total** | **3** |
 
 ## 📋 All Solutions
 
@@ -23,6 +23,7 @@
 |---|---------|------|----------|------|-------|--------|
 | 133 | Clone Graph | [Link](https://leetcode.com/problems/clone-graph/) | Python | O(N+E) | O(N) | ✅ |
 | 207 | Course Schedule | [Link](https://leetcode.com/problems/course-schedule/) | Python | O(N+E) | O(N+E) | ✅ |
+| 542 | 01 Matrix | [Link](https://leetcode.com/problems/01-matrix/) | Python | O(m*n) | O(m*n) | ✅ |
 
 ### Hard
 
