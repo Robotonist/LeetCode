@@ -5,9 +5,9 @@
 | Difficulty | Count |
 |-----------|-------|
 | Easy | 0 |
-| Medium | 4 |
+| Medium | 5 |
 | Hard | 0 |
-| **Total** | **4** |
+| **Total** | **5** |
 
 ## 📋 All Solutions
 
@@ -31,6 +31,7 @@
 
 | # | Problem | Link | Language | Time | Space | Status |
 |---|---------|------|----------|------|-------|--------|
+| 15 | 3Sum | [Link](https://leetcode.com/problems/3sum/) | Python | O(n²) | O(1) | ✅ |
 | 57 | Insert Interval | [Link](https://leetcode.com/problems/insert-interval/) | Python | O(n) | O(n) | ✅ |
 
 ### Hard
@@ -50,6 +51,7 @@ Medium/
 │   ├── 207-CourseSchedule.py
 │   └── 542-01Matrix.py
 └── Array Manipulation/
+    ├── 15-3Sum.py
     └── 57-InsertInterval.py
 ```
 
@@ -57,7 +59,7 @@ Medium/
 
 When adding a new solution:
 
-1. Create or navigate to the appropriate category folder (e.g., `Medium/Graph Problems/`)
+1. Create or navigate to the appropriate category folder (e.g., `Medium/Array Manipulation/`)
 2. Add the solution file with naming convention: `{number}-{ProblemName}.py`
 3. Add a row to the appropriate difficulty and category table
 4. Include: Problem number, name, link, language, complexity
